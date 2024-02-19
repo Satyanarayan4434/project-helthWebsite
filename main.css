@@ -9,3 +9,40 @@ body{
 .active{
   background-color: aqua;
 }
+.slider{
+  inset: 0px 200px 80px 0px;
+}
+.slider .slide{
+  transform: translateY(-50%);
+  background: var(--img);
+  background-position: center;
+  background-size: cover;
+}
+.slider .slide:nth-child(1),
+.slider .slide:nth-child(2){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500rem;
+  height: 100%;
+  transform: translateY(0);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0);
+  background-size: cover;
+}
+
+.slider .slide:nth-child(3){
+  left: calc(50% + 140px);
+background-size: cover;
+}
+.slider .slide:nth-child(4){
+  left: calc(50% + 400px);
+background-size: cover;
+}
+.slider .slide:nth-child(5){
+  left: calc(50% + 700px);
+background-size: cover;
+}
+.slider .slide:nth-child(6){
+  left: calc(50% + 1020px);
+background-size: cover;
+}
